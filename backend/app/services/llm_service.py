@@ -13,7 +13,7 @@ def get_response(system_prompt: str, history: list, user_message: str) -> str:
     Sends a message to the Gemini LLM with the provided system prompt and conversation history.
     
     Args:
-        system_prompt (str): The Krishi Sahayak persona and guidelines.
+        system_prompt (str): The SAGE persona and guidelines.
         history (list): Previous conversation turns to maintain context.
         user_message (str): The new question from the field supervisor.
         
