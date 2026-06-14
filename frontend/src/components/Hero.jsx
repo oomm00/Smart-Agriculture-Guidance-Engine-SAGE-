@@ -18,7 +18,7 @@ export default function Hero() {
         <img 
           src="/hero.png" 
           alt="Uttarakhand mountain agriculture" 
-          className="w-full max-w-3xl mx-auto rounded-2xl object-cover shadow-md border border-forest/10"
+          className="w-full h-64 sm:h-80 max-w-4xl mx-auto rounded-2xl object-cover shadow-md border border-forest/10"
         />
       </div>
     </div>
