@@ -1,6 +1,6 @@
 export default function Card({ title, description, tags = [], imageUrl }) {
   return (
-    <div className="bg-cream rounded-xl border border-terracotta/20 shadow-sm hover:shadow-md transition-shadow flex flex-col text-center overflow-hidden">
+    <div className="bg-cream rounded-xl border border-terracotta/20 shadow-sm hover:shadow-md transition-shadow flex flex-col text-center overflow-hidden h-full">
       {imageUrl && (
         <img 
           src={imageUrl} 
