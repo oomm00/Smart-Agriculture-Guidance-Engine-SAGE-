@@ -1,9 +1,7 @@
-import HeroIllustration from "./HeroIllustration"
-
 export default function Hero() {
   return (
-    <div className="bg-cream pt-20 sm:pt-28 pb-0 overflow-hidden border-b border-forest/10">
-      <div className="max-w-4xl mx-auto text-center relative z-10 px-4">
+    <div className="bg-cream pt-20 sm:pt-28 pb-16 overflow-hidden border-b border-forest/10">
+      <div className="max-w-4xl mx-auto text-center px-4">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-fraunces text-forest font-bold tracking-tight mb-6">
           Practical crop advice, in your language
         </h1>
@@ -12,12 +10,17 @@ export default function Hero() {
         </p>
         <a
           href="/dashboard"
-          className="inline-flex items-center justify-center px-8 py-4 text-base sm:text-lg font-medium rounded-md text-cream bg-forest hover:opacity-90 transition-opacity font-inter shadow-sm"
+          className="inline-flex items-center justify-center px-8 py-4 text-base sm:text-lg font-medium rounded-md text-cream bg-forest hover:opacity-90 transition-opacity font-inter shadow-sm mb-12"
         >
           Start chatting
         </a>
+        
+        <img 
+          src="[PASTE HERO URL]" 
+          alt="Uttarakhand mountain agriculture" 
+          className="w-full max-w-3xl mx-auto rounded-2xl object-cover shadow-md border border-forest/10"
+        />
       </div>
-      <HeroIllustration />
     </div>
   )
 }
