@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Card from "../components/Card"
+import { Leaf, Bug, Package } from "lucide-react"
 
 export default function Home() {
   return (
@@ -19,16 +20,19 @@ export default function Home() {
               title="Crop disease help" 
               description="Identify yellow spots, wilting, and other symptoms with organic treatment options." 
               tags={["Organic", "All crops"]}
+              icon={<Leaf size={32} />}
             />
             <Card 
               title="Pest management" 
               description="Identify mountain pests and get integrated pest management strategies." 
               tags={["Monsoon crop", "Low-water"]}
+              icon={<Bug size={32} />}
             />
             <Card 
               title="Post-harvest tips" 
               description="Learn best practices for storage and grading of mountain crops." 
               tags={["High-altitude", "Storage"]}
+              icon={<Package size={32} />}
             />
           </div>
         </div>
