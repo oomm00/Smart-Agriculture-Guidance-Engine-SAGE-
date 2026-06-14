@@ -19,19 +19,19 @@ export default function Home() {
               title="Crop disease help" 
               description="Identify yellow spots, wilting, and other symptoms with organic treatment options." 
               tags={["Organic", "All crops"]}
-              imageUrl="[PASTE URL 1]"
+              imageUrl="/disease.png"
             />
             <Card 
               title="Pest management" 
               description="Identify mountain pests and get integrated pest management strategies." 
               tags={["Monsoon crop", "Low-water"]}
-              imageUrl="[PASTE URL 2]"
+              imageUrl="/pest.png"
             />
             <Card 
               title="Post-harvest tips" 
               description="Learn best practices for storage and grading of mountain crops." 
               tags={["High-altitude", "Storage"]}
-              imageUrl="[PASTE URL 3]"
+              imageUrl="/harvest.png"
             />
           </div>
         </div>
