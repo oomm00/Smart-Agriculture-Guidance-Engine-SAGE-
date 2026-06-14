@@ -1,24 +1,19 @@
 export default function Hero() {
   return (
-    <div className="bg-green-50 py-16 px-4 sm:py-24">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span className="block">AI crop advisory for</span>
-          <span className="block text-green-700">Uttarakhand farmers</span>
+    <div className="bg-cream py-20 px-4 sm:py-28">
+      <div className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-fraunces text-forest font-bold tracking-tight mb-6">
+          Practical crop advice, in your language
         </h1>
-        <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-          Get practical guidance on crop diseases, pest management, and post-harvest handling tailored to mountain agriculture.
+        <p className="max-w-2xl mx-auto text-lg sm:text-xl text-ink font-inter mb-10">
+          Instant, AI-powered guidance for Uttarakhand farmers on crop diseases, pests, and post-harvest handling.
         </p>
-        <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-          <div className="rounded-md shadow">
-            <a
-              href="/dashboard"
-              className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg px-10"
-            >
-              Start chatting
-            </a>
-          </div>
-        </div>
+        <a
+          href="/dashboard"
+          className="inline-flex items-center justify-center px-8 py-4 text-base sm:text-lg font-medium rounded-md text-cream bg-forest hover:opacity-90 transition-opacity font-inter shadow-sm"
+        >
+          Start chatting
+        </a>
       </div>
     </div>
   )

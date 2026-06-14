@@ -6,36 +6,36 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-white shadow-sm border-b px-4 py-3">
+    <nav className="bg-cream px-4 py-4 border-b border-forest/10">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold text-green-700">
+        <Link to="/" className="text-2xl font-bold text-forest font-fraunces tracking-tight">
           SAGE
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
-          <Link to="/" className="text-gray-600 hover:text-green-700">Home</Link>
-          <Link to="/about" className="text-gray-600 hover:text-green-700">About</Link>
-          <Link to="/dashboard" className="text-gray-600 hover:text-green-700">Dashboard</Link>
-          <Link to="/login" className="text-gray-600 hover:text-green-700">Login</Link>
+        <div className="hidden md:flex space-x-8 font-inter">
+          <Link to="/" className="text-ink hover:text-forest transition-colors">Home</Link>
+          <Link to="/about" className="text-ink hover:text-forest transition-colors">About</Link>
+          <Link to="/dashboard" className="text-ink hover:text-forest transition-colors">Dashboard</Link>
+          <Link to="/login" className="text-ink hover:text-forest transition-colors">Login</Link>
         </div>
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-gray-600"
+          className="md:hidden text-forest p-1"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <Menu />
+          <Menu className="w-6 h-6" />
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden pt-4 pb-2 space-y-3 flex flex-col">
-          <Link to="/" className="block text-gray-600 hover:text-green-700">Home</Link>
-          <Link to="/about" className="block text-gray-600 hover:text-green-700">About</Link>
-          <Link to="/dashboard" className="block text-gray-600 hover:text-green-700">Dashboard</Link>
-          <Link to="/login" className="block text-gray-600 hover:text-green-700">Login</Link>
+        <div className="md:hidden pt-4 pb-2 space-y-4 flex flex-col font-inter">
+          <Link to="/" className="block text-ink hover:text-forest">Home</Link>
+          <Link to="/about" className="block text-ink hover:text-forest">About</Link>
+          <Link to="/dashboard" className="block text-ink hover:text-forest">Dashboard</Link>
+          <Link to="/login" className="block text-ink hover:text-forest">Login</Link>
         </div>
       )}
     </nav>
